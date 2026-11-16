@@ -46,12 +46,12 @@ def filter_by_prefix(words: list[str], prefix: str) -> list[str]:
     """given a list of words it returns a new list that just has the words with a certain prefix"""
     total = []
     for word in words: 
-        if s.startswith(prefix) == word: 
-            total = [] + word 
+        if word.startswith(prefix) == word: 
+            total = [
     return total 
     
 def test_filter_by_prefix(): 
-    assert filter_by_prefix(["undo", "undone", "preorder", "indent", "un"]) == ["undo", "undone"]
+    assert filter_by_prefix(["undo", "undone", "preorder", "indent"], "un") == ["undo", "undone"]
 
 
      
