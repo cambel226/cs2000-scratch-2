@@ -56,7 +56,11 @@ def test_filter_by_prefix():
 def test_filter_by_prefix2(): 
     assert filter_by_prefix([], "pre") == [] 
 
-
+def reverse_list(lst: list) -> list: 
+    """given a list the function returns a new list with the elements in reverse order"""
+    totally = [] 
+    for l in lst: 
+        totally = 
 
 
      
