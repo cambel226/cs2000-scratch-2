@@ -47,7 +47,7 @@ def filter_by_prefix(words: list[str], prefix: str) -> list[str]:
     total = []
     for word in words: 
         if word.startswith(prefix) == word: 
-            total = [
+            total = [] + [word]
     return total 
     
 def test_filter_by_prefix(): 
